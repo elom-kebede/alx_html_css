@@ -1,0 +1,26 @@
+/* Make the body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure it takes full viewport height */
+  margin: 0; /* Remove default spacing */
+}
+
+/* Make the main tag a flex container in row direction */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* Allow main to grow and shrink as needed */
+}
+
+/* Article takes up 2/3 of the width */
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+/* Aside takes up 1/3 of the width */
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
